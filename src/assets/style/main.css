@@ -1,0 +1,8 @@
+/* 修改主色 */
+:root {
+  --n-primary: #16CCE4FF; /* 设置主题颜色为蓝色 */
+  --n-primary-hover: #B9EAEEFF; /* 设置主题颜色悬浮状态为蓝色 */
+  --n-primary-pressed: #0EEEDBFF; /* 设置主题颜色按下状态为蓝色 */
+  --n-primary-suppl: #07D6C5FF; /* 设置主题颜色补充色为蓝色 */
+}
+
