@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "zhu-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -26,8 +26,10 @@
     "sass": "^1.69.1",
     "typeit": "^8.7.1",
     "vfonts": "^0.0.3",
+    "vite-plugin-cdn-import": "^0.3.5",
     "vite-plugin-compression": "^0.5.1",
     "vue": "^3.3.4",
+    "vue-demi": "^0.12.5",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
