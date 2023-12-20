@@ -1,20 +1,20 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
-import viteCompression from 'vite-plugin-compression'
+// import viteCompression from 'vite-plugin-compression'
 import {Plugin as importToCDN} from 'vite-plugin-cdn-import'
 export default defineConfig({
     base: './',
     plugins: [
       vue(),
       // gzip压缩 生产环境生成 .gz 文件
-      viteCompression({
-        verbose: true,
-        disable: false,
-        threshold: 10240,
-        algorithm: 'gzip',
-        ext: '.gz',
-      }),
+      // viteCompression({
+      //   verbose: true,
+      //   disable: false,
+      //   threshold: 10240,
+      //   algorithm: 'gzip',
+      //   ext: '.gz',
+      // }),
       importToCDN({
         modules: [
             {
