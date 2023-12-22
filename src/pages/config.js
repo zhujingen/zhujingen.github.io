@@ -4,7 +4,7 @@ import hobbiesSvg from './images/hobbies.svg'
 import unknownSvg from './images/unknown.svg'  
 
 import { RouterLink } from "vue-router";
-import { defineComponent, h, ref } from "../../node_modules/vue";
+import { defineComponent, h, ref } from "vue";
 import seeyou from './audio/seeyouagain.mp3'
 export const musicList = [
     {

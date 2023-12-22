@@ -28,7 +28,7 @@
 
 <script setup>
 
-  import { defineComponent, h, ref } from "../../node_modules/vue";
+  import { defineComponent, h, ref } from "vue";
   import { NIcon, useMessage, NMenu, NDrawer, NDrawerContent } from "naive-ui";
   import http from "@/service/http";
   import lbAudio from "lb-audio-v3";

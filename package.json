@@ -19,6 +19,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "hexo-deployer-git": "^4.0.0",
     "lb-audio-v3": "^1.0.5",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",

@@ -1,6 +1,6 @@
-import TypeIt from '../../node_modules/typeit'
+import TypeIt from 'typeit'
 
-import { defineComponent, h } from '../../node_modules/vue'
+import { defineComponent, h } from 'vue'
 export default defineComponent({
   name: 'TypeIt',
   props: {
