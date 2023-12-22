@@ -30,7 +30,7 @@
 
   import { defineComponent, h, ref } from "vue";
   import { NIcon, useMessage, NMenu, NDrawer, NDrawerContent } from "naive-ui";
-  import http from "@/service/http";
+  // import http from "@/service/http";
   import lbAudio from "lb-audio-v3";
   import { musicList, menuOptions } from "./config.js";
   // 引入组件样式
