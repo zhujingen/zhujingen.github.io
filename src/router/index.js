@@ -9,7 +9,12 @@ const routes = [
   {
     path: '/game',
     name: 'game',
-    component: () => import('@/pages/home.vue'), // 注意这里要带上 文件后缀.vue
+    component: () => import('@/pages/game.vue'), // 注意这里要带上 文件后缀.vue
+  },
+  {
+    path: '/car',
+    name: 'car',
+    component: () => import('@/pages/car.vue'), // 注意这里要带上 文件后缀.vue
   },
 ]
 

@@ -4,18 +4,9 @@
     <span class='music-icon' @click='showMusic'> </span>
     <div class="poetry">
       <div class="verse">
-        <TypeIt :values="[poetry]" :cursor="false" :speed="250" />
+        <!-- <TypeIt :values="[poetry]" :cursor="false" :speed="250" /> -->
       </div>
     </div>
-    <!-- 北风卷地白草折，胡天八月即飞雪。
-忽如一夜春风来，千树万树梨花开。
-散入珠帘湿罗幕，狐裘不暖锦衾薄。
-将军角弓不得控，都护铁衣冷难着。
-瀚海阑干百丈冰，愁云惨淡万里凝。
-中军置酒饮归客，胡琴琵琶与羌笛。
-纷纷暮雪下辕门，风掣红旗冻不翻。
-轮台东门送君去，去时雪满天山路。
-山回路转不见君，雪上空留马行处。 -->
     <!-- 抽屉音乐 -->
     <n-drawer v-model:show="activeMusic" :width="380" placement="right" :trap-focus="false" :block-scroll="false"
       display-directive="show">
@@ -36,7 +27,9 @@
   // 引入组件样式
   import "lb-audio-v3/style";
   import TypeIt from "./typeit.js";
-
+//   import { useRouter } from "vue-router";
+// const router = useRouter();
+// console.log(router);
   const activeMenu = ref("null");
   const activeMusic = ref(false);
   const poetry = ref([
@@ -48,7 +41,7 @@
     // '中军置酒饮归客，胡琴琵琶与羌笛',
     // '纷纷暮雪下辕门，风掣红旗冻不翻',
     // '轮台东门送君去，去时雪满天山路',
-    '2222222222北风卷地白草折，胡天八月即飞雪。忽如一夜春风来，千树万树梨花开。散入珠帘湿罗幕，狐裘不暖锦衾薄。将军角弓不得控，都护铁衣冷难着。瀚海阑干百丈冰，愁云惨淡万里凝。中军置酒饮归客，胡琴琵琶与羌笛。纷纷暮雪下辕门，风掣红旗冻不翻。轮台东门送君去，去时雪满天山路。山回路转不见君，雪上空留马行处。',
+    '北风卷地白草折，胡天八月即飞雪。忽如一夜春风来，千树万树梨花开。散入珠帘湿罗幕，狐裘不暖锦衾薄。将军角弓不得控，都护铁衣冷难着。瀚海阑干百丈冰，愁云惨淡万里凝。中军置酒饮归客，胡琴琵琶与羌笛。纷纷暮雪下辕门，风掣红旗冻不翻。轮台东门送君去，去时雪满天山路。山回路转不见君，雪上空留马行处。',
   ])
   // function renderIcon(icon) {
   //   return () => h(NIcon, null, { default: () => h(icon) });

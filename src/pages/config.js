@@ -105,23 +105,19 @@ export  const menuOptions = [
       icon: renderImg(traveSvg)
     },
     {
-      label: "未知",
+      label: () => h(
+        RouterLink,
+      {
+        to: {
+          name: "car",
+        }
+      },
+       { default: () =>  "鹏飞的车"}
+      
+    ),
       key: "dance-dance-dance",
       icon: renderImg(unknownSvg),
-      children: [
-        {
-          type: "group",
-          label: "人物",
-          key: "people",
-          children: [
-            {
-              label: "叙事者",
-              key: "narrator",
-              // icon: renderIcon(PersonIcon)
-            }
-          ]
-        },
-      ]
+
     },
     // {
     //   label: () => h(
